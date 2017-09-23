@@ -12,5 +12,5 @@ def very_inefficient(recursion, accumulator):
 def example_handler(event, context):
     result = very_inefficient(512, '')
     if hasattr(context, 'function_name'):
-	print("Function name is: ", context.function_name)
+        print("Function name is: ", context.function_name)
     return event['key1']  # echo first key value
